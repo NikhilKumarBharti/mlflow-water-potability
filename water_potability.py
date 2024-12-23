@@ -7,12 +7,12 @@ import seaborn as sns
 import mlflow.sklearn
 import dagshub
 
-dagshub.init(repo_owner='nikhilkumarbharti', repo_name='mlflow-water-potability ', mlflow=True)
+dagshub.init(repo_owner='nikhilkumarbharti', repo_name='mlflow-water-potability', mlflow=True)
 
 
 mlflow.set_experiment("water_exp2")
 
-mlflow.set_tracking_uri('https://dagshub.com/nikhilkumarbharti/mlflow-water-potability .mlflow')
+mlflow.set_tracking_uri('https://dagshub.com/nikhilkumarbharti/mlflow-water-potability.mlflow')
 
 data = pd.read_csv('data\water_potability.csv')
 
